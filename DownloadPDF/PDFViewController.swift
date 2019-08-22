@@ -36,8 +36,9 @@ class PDFViewController: UIViewController {
         pdfView.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor).isActive = true
 
 
-        DispatchQueue.main.asyncAfter(deadline: .now()+3) {
-            self.dismiss(animated: true, completion: nil)
-        }
+        // Close the PDFViewer after 3 seconds until we add close button
+//        DispatchQueue.main.asyncAfter(deadline: .now()+3) {
+//            self.dismiss(animated: true, completion: nil)
+//        }
     }
 }
