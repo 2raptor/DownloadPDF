@@ -21,10 +21,6 @@ class PDFViewController: UIViewController {
             let document = PDFDocument(url: pdfURL) {
             pdfView.document = document
             pdfView.autoScales = true
-            if let firstPage = document.page(at: 0) {
-                let firstPageBounds = firstPage.bounds(for: pdfView.displayBox)
-                pdfView.go(to: CGRect(x: 0, y: firstPageBounds.height, width: 1.0, height: 1.0), on: firstPage)
-            }
         }
 
         view.addSubview(pdfView)
