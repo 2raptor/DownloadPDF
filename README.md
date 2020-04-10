@@ -14,4 +14,4 @@ When `autoScales` property of PDFView is disabled the pdfView shows the 1nd page
 Setting usePageViewController before setting autoScales solved the issue
 `pdfView.usePageViewController(true)`
 
-https://stackoverflow.com/questions/57617645/pdfview-how-to-autoscale-and-still-load-first-page?noredirect=1#comment108100808_57617645
+https://stackoverflow.com/questions/57617645/pdfview-how-to-autoscale-and-still-load-first-page
