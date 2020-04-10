@@ -9,3 +9,9 @@ Click on download PDF and then open PDF.
 When `autoScales` property of PDFView is disabled the pdfView shows the 1nd page. When `autoScales` is enabled the pdfView scrolls 2nd page
 
 <img src=https://raw.githubusercontent.com/2raptor/DownloadPDF/master/Snapshots/AutoScaleds%20is%20false%20Page1.png width=300> <img src=https://raw.githubusercontent.com/2raptor/DownloadPDF/master/Snapshots/AutoScaleds%20is%20true%20Page2.png width=300> 
+
+# Solution
+Setting usePageViewController before setting autoScales solved the issue
+`pdfView.usePageViewController(true)`
+
+https://stackoverflow.com/questions/57617645/pdfview-how-to-autoscale-and-still-load-first-page?noredirect=1#comment108100808_57617645
